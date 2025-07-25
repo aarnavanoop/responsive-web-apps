@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // 4. Tell the server to serve static files from the 'public_html' directory
-app.use(express.static('public_html'));
+app.use(express.static('public'));
 
 // 5. Start the server and listen for incoming requests
 app.listen(port, () => {

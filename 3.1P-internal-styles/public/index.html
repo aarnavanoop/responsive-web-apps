@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SIT774 Team">
+    <meta name="description" content="Template for structuring a html document">
+    
+    <!-- Internal CSS Styles -->
+    <style>
+        /* Sets the base font family and size for the whole document. */
+        html {
+            font-family: "Trebuchet MS", "Verdana", "Arial", "sans-serif";
+            font-size: 16px;
+        }
+
+        /* Sets the background color for the page body. */
+        body {
+            background-color: rgb(241, 255, 179);
+        }
+
+        /* Sets a serif font for all heading levels. */
+        h1, h2, h3 {
+            font-family: Garamond, Georgia, serif;
+        }
+
+        /* Styles the main <h1> heading. */
+        h1 {
+            background-color: MediumSeaGreen;
+            color: white;
+            padding: 1.1rem;
+            text-align: center;
+        }
+
+        /* Styles the <h2> and <h3> subheadings. */
+        h2, h3 {
+            background-color: rgb(160, 204, 255);
+            color: rgb(51, 51, 51);
+            padding: 0.3em 0.8em 0.3em 0.8em;
+        }
+
+        /* Adds margin to the navigation block. */
+        nav {
+            margin: 1.5em;
+        }
+
+        /* Adds margin to each content section. */
+        section {
+            margin: 1.8em;
+        }
+
+        /* Styles the footer at the bottom of the page. */
+        footer {
+            color: DarkRed;
+            font-size: 0.8rem;
+            font-style: italic;
+            text-align: center;
+            background-color: DarkSeaGreen;
+        }
+
+        /* Styles any element with class="highlight". */
+        .highlight {
+            background-color: LightPink;
+            font-weight: bold;
+        }
+    </style>
+    <title>dKinSS</title>
+</head>
+
+<body>
+    <!-- Main page header -->
+    <header>
+        <h1> dKin Software Systems</h1>
+    </header>
+
+    <!-- Main navigation links -->
+    <nav>
+        <a href="home.html"> Home</a> &nbsp; &nbsp;
+        <a href="services.html"> Services</a> &nbsp; &nbsp;
+        <a href="contact.html"> Contact</a>
+    </nav>
+
+    <!-- Main page content -->
+    <main>
+        <section>
+            <h3> Advanced Software Development </h3>
+            <p> dKin Software Systems is an experienced provider of reliable software
+                solutions to all of your complex computing needs. We have expertise
+                in fields ranging from web application development, high performance
+                scientific programming, artificial intelligence and cryptography.</p>
+            <p>
+                We pride ourselves on being:
+            </p>
+            <ul>
+                <li id="benefit1">Reliable</li>
+                <li id="benefit2">Experienced</li>
+                <li id="benefit3">Security Focused</li>
+                <li id="benefit4">Responsive</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h3> Your Needs are Our Priority </h3>
+            <p> The team at dKin Software Systems are dedicated to providing
+                <!-- The .highlight class styles this specific span of text. -->
+                <span class="highlight">solutions that meet all your needs</span>, 
+                in creative and innovative ways.
+            </p>
+        </section>
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+        <p>Copyright &copy; 2024 dKin Software Systems Pty Ltd.</p>
+        <p>Please read our <a href="privacy.html">Privacy Policy</a>.</p>
+    </footer>
+</body>
+
+</html>
