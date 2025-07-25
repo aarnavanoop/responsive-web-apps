@@ -1,22 +1,66 @@
-* {
-    text-align: center;
-}
+/* Base styles for the entire document */
 html {
-    font-family: 'Righteous', Garamond, Georgia , sans;
-
+    font-family: 'Righteous', Garamond, Georgia, sans-serif;
+    font-size: 16px;
 }
 
+body {
+    background-color: rgb(241, 255, 179);
+}
+
+/* Heading styles */
 h1, h2, h3 {
-    font-family: 'Orbitron', Tahoma, Verdana , sans-serif;
+    font-family: 'Orbitron', Tahoma, Verdana, sans-serif;
 }
 
 h1 {
-    letter-spacing: 0.2em;
+    background-color: MediumSeaGreen;
+    color: white;
+    padding: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.2em; 
 }
 
+h2, h3 {
+    background-color: rgb(160, 204, 255);
+    color: rgb(51, 51, 51);
+    padding: 0.3em 0.8em;
+}
+
+/* Navigation styles */
 nav {
     margin: 1.5em;
-    font-family: 'Philosopher', Verdana, Tahoma, sans-serif;
-    font-weight: 900;
+    font-family: 'Philosopher', Verdana, Tahoma, sans-serif; 
+    font-weight: 900; 
+    text-align: center;
 }
 
+/* Section styles */
+section {
+    margin: 1.8em;
+}
+
+/* Footer styles */
+footer {
+    color: DarkRed;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    background-color: DarkSeaGreen;
+}
+
+
+footer p {
+    margin: 0.1em;
+}
+
+
+.highlight {
+    background-color: LightPink;
+    font-weight: bold;
+}
+
+
+ul, p {
+    text-align: left;
+}
