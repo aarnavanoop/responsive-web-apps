@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+}
+html {
+    font-family: 'Righteous', Garamond, Georgia , sans;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', Tahoma, Verdana , sans-serif;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+}
+
+nav {
+    margin: 1.5em;
+    font-family: 'Philosopher', Verdana, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
