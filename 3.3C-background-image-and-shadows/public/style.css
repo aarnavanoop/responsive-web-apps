@@ -1,17 +1,59 @@
 html {
     font-family: 'Righteous', Garamond, Georgia , sans;
+    font-size: 16px
 }
 
+body{
+    background-color: rgb(241, 255, 179);
+}
+
+header{
+    background-color: mediumseagreen;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.2em;
+    padding: 10px;
+    letter-spacing: 0.2em;
+
+}
+
+section{
+    margin: 30px;
+}
+
+h3{
+    padding: 20px;
+    background-color: rgb(160, 204, 255);
+    color: rgb(51, 51, 51);
+    padding: 0.3em 0.8em;
+}
 h1, h2, h3 {
     font-family: 'Orbitron', Tahoma, Verdana , sans-serif;
 }
 
-h1 {
-    letter-spacing: 0.2em;
-}
 
 nav {
     margin: 1.5em;
     font-family: 'Philosopher', Verdana, Tahoma, sans-serif;
     font-weight: 900;
+}
+
+.highlight{
+    background-color:lightpink;
+    font-weight: 600;
+
+}
+
+footer{
+    background-color:darkseagreen ;
+    padding:15px;
+    color: darkred;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+footer p{
+    margin: 0.1em;
+
 }
