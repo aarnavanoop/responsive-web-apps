@@ -8,18 +8,19 @@ body{
 }
 
 header{
+    background-image:url("mountain.jpg");
+    background-repeat: repeat;
+    background-size: 200px;
+
     background-color: mediumseagreen;
     text-align: center;
-    color: white;
+    color: rgba(216, 73, 12, 0.566);
     letter-spacing: 0.2em;
     padding: 10px;
     letter-spacing: 0.2em;
 
 }
 
-h1{
-    background-image:url("mountain.jpg")
-}
 section{
     margin: 30px;
 }
