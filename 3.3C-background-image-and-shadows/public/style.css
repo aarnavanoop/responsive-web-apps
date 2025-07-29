@@ -17,6 +17,9 @@ header{
 
 }
 
+h1{
+    background-image:url("mountain.jpg")
+}
 section{
     margin: 30px;
 }
@@ -33,15 +36,59 @@ h1, h2, h3 {
 
 
 nav {
+    display:flex;
+    justify-content: center;
     margin: 1.5em;
     font-family: 'Philosopher', Verdana, Tahoma, sans-serif;
     font-weight: 900;
 }
 
+nav a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    color: #ffffff;
+    background-color: rgb(8, 131, 240);
+}
+
+nav a:hover{
+    color:#0682b1;
+    background-color: #ffffff;
+    border: 1px solid #0eb482;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding:15px;
+    background-image:url("list-style.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    margin-bottom:0px;
+}
 .highlight{
     background-color:lightpink;
+    font-style: italic;
     font-weight: 600;
+    background-image: linear-gradient(to right,red, yellow,teal);
 
+}
+.standout{
+    background-color: red;
+    font-weight: bold;
+    background-image:url("list-style.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+}
+
+section p::first-letter{
+    font-size: 24px;
+    color: red;
+    font-style: italic;
 }
 
 footer{
