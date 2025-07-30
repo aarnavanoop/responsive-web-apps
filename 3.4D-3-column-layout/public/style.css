@@ -48,15 +48,23 @@ h1{
 .main-content {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10%;
-}
-
-.left-content{
-    border: 2px solid black;
-}
+    /*padding-bottom: 10%;*/
     
-.body{
-    padding:25px
 }
 
+.left-content, .middle-content, .right-content{
+    border: 2px solid black;
+    padding:60px;
+    margin:15px;
+    border-radius: 5%;
+
+}
+
+footer{
+    padding-left: 15px;
+}
+
+.copyright{
+    margin-bottom: 0;
+}
 
