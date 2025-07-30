@@ -1,25 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    box-sizing: border-box; 
 }
 
 body{
-    background-color: beige;
+    background-color: #b1ceeb;
+    color: #343a40;
 }
     
-header{
+.page-header{
     margin-top: 40px;
     text-align:center;
+ }
+
+ .heading{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
  }
 
 h1{
     text-align:center;
 }
 
-.h1{
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-style: italic;
+.page-title{
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
     text-align: center;
     color:rgb(0, 163, 109);
     border: 2px solid blue ;
@@ -27,6 +33,11 @@ h1{
     border-radius: 8px;
     margin-top: 10px;
     background-color: rgb(235, 198, 198);
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;  
 }
 
 .navigation{
@@ -48,11 +59,10 @@ h1{
 .main-content {
     display: flex;
     justify-content: space-between;
-    /*padding-bottom: 10%;*/
     
 }
 
-.left-content, .middle-content, .right-content{
+.panel{
     border: 2px solid black;
     padding:60px;
     margin:15px;
