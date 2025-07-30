@@ -1,32 +1,62 @@
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
 
-    .main-content {
-        display: flex;
-    }
+body{
+    background-color: beige;
+}
+    
+header{
+    margin-top: 40px;
+    text-align:center;
+ }
 
-    .body{
-        padding:25px
-    }
+h1{
+    text-align:center;
+}
 
-    header{
-        margin-top: 50px;
-    }
-    h1{
-        text-align:center;
-    }
+.h1{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: italic;
+    text-align: center;
+    color:rgb(0, 163, 109);
+    border: 2px solid blue ;
+    padding:15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: rgb(235, 198, 198);
+}
 
-    .h1{
-        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        font-style: italic;
-        text-align: center;
-        color:rgb(0, 163, 109);
-        border: 2px solid blue ;
-        padding:15px;
-        border-radius: 8px;
-        margin-top: 10px;
-        background-color: rgb(235, 198, 198);
-    }
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.btn{
+    padding: 20px;
+    font-size: 1.1rem;
+    font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(218, 160, 160);
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.left-content{
+    border: 2px solid black;
+}
+    
+.body{
+    padding:25px
+}
+
+
