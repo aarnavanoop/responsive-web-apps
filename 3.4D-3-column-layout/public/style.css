@@ -1,0 +1,32 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    }
+
+    .main-content {
+        display: flex;
+    }
+
+    .body{
+        padding:25px
+    }
+
+    header{
+        margin-top: 50px;
+    }
+    h1{
+        text-align:center;
+    }
+
+    .h1{
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-style: italic;
+        text-align: center;
+        color:rgb(0, 163, 109);
+        border: 2px solid blue ;
+        padding:15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        background-color: rgb(235, 198, 198);
+    }
