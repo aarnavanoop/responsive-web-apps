@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(60, 193, 255);
+    background: dark;
+    padding-bottom: 0.6rem;
+}
+
+.nav-link{
+    color: rgb(236, 244, 250);
+}
+
+.nav-link:hover{
+    color: rgb(236, 244, 250);
+    font-weight: 1000;
+}
+
+
+.bg-info{
+    background-color: lightblue;
+}
+.header{
+    text-align: center;
+    font-family: cursive;
+}
+
+.introduction-container{
+    padding: 0.8rem 0 0 2.5rem;
+    
+}
+
+.top-link-container{
+    text-align: right;
+}
