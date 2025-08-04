@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <ul class="nav">
+      <ul class="nav body-data">
          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Ice Cream</a>
          </li>
@@ -26,7 +26,7 @@
             <a class="nav-link">Summary</a>
          </li>
       </ul>
-      <div class="p-3 mb-2 bg-info text-dark">
+      <div class="p-3 mb-2 bg-info text-dark body-data">
          <header class = "header">
             <h1>World of Ice Cream</h1>
             <p>Ice cream's popularity lies in its creamy texture, refreshing taste, and 
@@ -37,14 +37,62 @@
             </p>
          </header>
       </div>
-      <div class = "introduction-container">
+      <div class = "introduction-container body-data">
          <h2 class = "introduction-header">Introduction</h2>
-         <p>Ice cream is a classic frozen dessert, loved for its creamy texture and endless variety of flavors. Made from a simple base of cream and sugar, it has become a universally cherished treat for people of all ages.</p>
-         <p>Its greatest perk is its ability to provide instant happiness. As an affordable and accessible treat, it serves as a simple comfort, a small reward, or an easy way to brighten any day.</p>
-         <p>Ice cream also brings people together, acting as a catalyst for social connection. Sharing a scoop is a timeless tradition that helps friends and family create new memories and strengthen their bonds.</p>
-         <div class = top-link-container>
-         <a href ="#" class = "top-link">Top</a>
+            <p>Ice cream is a classic frozen dessert, loved for its creamy texture and endless variety of flavors. Made from a simple base of cream and sugar, it has become a universally cherished treat for people of all ages.</p>
+            <p>Its greatest perk is its ability to provide instant happiness. As an affordable and accessible treat, it serves as a simple comfort, a small reward, or an easy way to brighten any day.</p>
+            <p>Ice cream also brings people together, acting as a catalyst for social connection. Sharing a scoop is a timeless tradition that helps friends and family create new memories and strengthen their bonds.</p>
+         <div class = "top-link-container">
+            <a href ="#" class = "top-link">Top</a>
+         </div>
       </div>
-      </div>
+      <div class = "ice-cream-container body-data">
+         <h2 class = "ice-cream-header">
+            Ice Cream Sales Data
+         </h2>
+         <p>In this section of the page, we have a nice table with some data from the 2024 Ice Cream Sales in Australia. Here the table is styled with the bootstrap classes table table-striped table-hover; and the table-success applied to the table header thead. Note, the table also includes a caption and is constrained to 8 columns on wider screens and all 12 columns on small screens (i.e., col-md-9 col-12 mx-auto).</p>
+      <table class="table body-data">
+      <thead>
+         <tr>
+            <th scope="col"></th>
+            <th scope="col">NSW</th>
+            <th scope="col">VIC</th>
+            <th scope="col">QLD</th>
+            <th scope="col">WA</th>
+            <th scope="col">SA</th>
+            <th scope="col">TAS</th>
+            <th scope="col">ACT</th>
+            <th scope="col">NT</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th scope="row">Ice Cream Sales ($M)</th>
+            <td>32.6</td>
+            <td>23.6</td>
+            <td>28.7</td>
+            <td>19.2</td>
+            <td>15.6</td>
+            <td>10.6</td>
+            <td>7.7</td>
+            <td>9.7</td>
+         </tr>
+         <tr>
+            <th scope="row">Profit($M)</th>
+            <td>3.6</td>
+            <td>2.6</td>
+            <td>8.7</td>
+            <td>9.2</td>
+            <td>1.6</td>
+            <td>0.6</td>
+            <td>1.7</td>
+            <td>0.7</td>
+         </tr>
+      </tbody>
+      </table>
+      <caption class = "table-caption">
+         Australian Ice Cream Sales by State (2024)
+      </caption>
+
 </body>
 </html>

@@ -34,11 +34,11 @@ body{
     font-family: cursive;
 }
 
-.introduction-container{
-    padding: 0.8rem 0 0 2.5rem;
-    
-}
 
 .top-link-container{
     text-align: right;
+}
+
+.body-data{
+    padding: 0.8rem 2.5rem; 
 }
