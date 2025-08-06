@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ice Cream World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sales-data">Sales Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fun-facts">Fun Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#images">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            External Links
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.deakin.edu.au" target="_blank">Deakin University</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com" target="_blank">Google</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>World of Ice Cream</h1>
+            <p>
+                Ice cream's popularity lies in its creamy texture, refreshing taste, and diverse
+                flavours, making it a beloved dessert for all occasions.
+            </p>
+        </div>
+    </section>
+
+    <div id="introduction" class="section-container">
+        <h2 class="text-center">Welcome!</h2>
+        <p>
+            This page showcases a number of Bootstrap components and custom styles to create an appealing and user-friendly layout. It features a sticky navigation bar, a hero section, a carousel, themed content sections, an interactive accordion, and more.
+        </p>
+    </div>
+
+    <div id="sales-data" class="section-container">
+        <h2 class="text-center">Ice Cream Sales Data</h2>
+        <p class="text-center text-muted mb-4">A summary of 2024 ice cream sales in Australia.</p>
+        <div class="row mt-4">
+            <div class="col-12 col-lg-10 mx-auto">
+                <table class="table table-striped-columns table-hover text-center shadow-sm rounded-3 overflow-hidden">
+                    <caption class="pb-2 pt-3">Australian Ice Cream Sales by State (2024)</caption>
+                    <thead class="table-theme">
+                        <tr>
+                            <th scope="col" class="text-start"></th>
+                            <th scope="col">NSW</th><th scope="col">VIC</th><th scope="col">QLD</th><th scope="col">WA</th><th scope="col">SA</th><th scope="col">TAS</th><th scope="col">ACT</th><th scope="col">NT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Sales ($M)</th>
+                            <td>32.6</td><td>23.6</td><td>28.7</td><td>19.2</td><td>15.6</td><td>10.6</td><td>7.7</td><td>9.7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Profit ($M)</th>
+                            <td>3.6</td><td>2.6</td><td>8.7</td><td>9.2</td><td>1.6</td><td>0.6</td><td>1.7</td><td>0.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="fun-facts" class="section-container">
+        <h2 class="text-center">Ice Cream Fun Facts</h2>
+        <div class="row g-4 mt-3">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 card-theme">
+                    <div class="card-body">
+                        <h5 class="card-title">Ancient Origins</h5>
+                        <p class="card-text">The earliest forms of ice cream date back to ancient China, where a frozen mixture of milk and rice was enjoyed. Roman Emperor Nero also had snow flavored with fruits and honey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 card-theme">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla's Reign</h5>
+                        <p class="card-text">Despite the huge variety of flavours available, classic vanilla remains the most popular and best-selling ice cream flavour around the world due to its versatility.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 card-theme">
+                    <div class="card-body">
+                        <h5 class="card-title">Brain Freeze!</h5>
+                        <p class="card-text">That sharp headache from eating ice cream too fast is called sphenopalatine ganglioneuralgia. Pressing your tongue to the roof of your mouth can help relieve it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="images" class="section-container">
+        <h2 class="text-center">Ice Cream Pictures</h2>
+        <p class="text-center text-muted">A responsive gallery of freely-usable images from Unsplash.</p>
+        <div id="iceCreamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1974&auto=format&fit=crop" class="d-block w-100" alt="A lot of tubs of ice cream.">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=2072&auto=format&fit=crop" class="d-block w-100" alt="A panda chewing on bamboo.">
+                </div>
+                 <div class="carousel-item">
+                    <img src="image3.png" class="d-block w-100" alt="A bunch of ice-cream cones">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stories" class="section-container">
+        <h2 class="text-center">Ice Cream Stories</h2>
+        <div class="accordion mt-4" id="storiesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ice Creams at the Beach by Tim Stief
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#storiesAccordion">
+                    <div class="accordion-body">
+                        <img src="image5.jpg" class="img-fluid rounded mb-3" alt="Hand holding an ice cream cone at the beach.">
+                        <p class="small mb-0">The <code>.accordion</code> component allows for collapsible content panels. The title is in the header, and the image/text are in the body. This creates a clean, interactive list.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ice Creams in a Carpark by Valerian Koo
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#storiesAccordion">
+                    <div class="accordion-body">
+                        <img src="image6.jpg" class="img-fluid rounded-pill mb-3" alt="Ice cream cone in a carpark.">
+                        <p class="mb-0">This image uses the <code>.rounded-pill</code> class for a different border style. Each accordion item can be opened and closed independently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ice Creams in Winter by Phillip Cordts
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#storiesAccordion">
+                    <div class="accordion-body">
+                         <img src="image7.jpg" class="img-fluid rounded-circle mb-3" alt="Ice cream cone in a snowy setting.">
+                        <p class="mb-0">This image uses the <code>.rounded-circle</code> class. The accordion is a great way to present FAQs, stories, or step-by-step instructions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="summary" class="section-container">
+        <h2 class="text-center">Summary</h2>
+        <div class="text-center">
+             <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#summaryContent" role="button" aria-expanded="false" aria-controls="summaryContent">
+                Click to Toggle Summary
+            </a>
+        </div>
+        <div class="collapse mt-3" id="summaryContent">
+            <div class="card card-body">
+                <p class="mb-0">This page has been improved with a consistent layout, a harmonized color scheme, and more interactive components to create a better user experience. Thanks for viewing!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid p-3 bg-dark text-white text-center">
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="mb-0 me-3">&copy; 2025 Ice Cream World</p>
+            <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#featuresOffcanvas" aria-controls="featuresOffcanvas">
+                Page Features
+            </button>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="featuresOffcanvas" aria-labelledby="featuresOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="featuresOffcanvasLabel">Page Features Explained</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>This page uses several components from the Bootstrap framework to create a responsive and interactive layout. Here are some of the key features:</p>
+            <dl class="row">
+                <dt class="col-sm-4">Sticky Navbar</dt><dd class="col-sm-8">A navigation bar that stays at the top of the screen when you scroll.</dd>
+                <dt class="col-sm-4">Carousel</dt><dd class="col-sm-8">An automated, sliding image gallery.</dd>
+                <dt class="col-sm-4">Accordion</dt><dd class="col-sm-8">Used in the "Stories" section to create collapsible content panels.</dd>
+                 <dt class="col-sm-4">Offcanvas</dt><dd class="col-sm-8">This very component! A sidebar that slides in to show extra content.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button id="backToTopBtn" class="btn btn-primary rounded-circle shadow-lg">&uarr;</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

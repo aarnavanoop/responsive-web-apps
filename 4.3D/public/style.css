@@ -1,0 +1,119 @@
+:root {
+    /* CHANGE: Defined theme colors for easy management and consistency. */
+    --theme-primary: #a0d8ef;
+    --theme-secondary: #eaf6fa;
+    --theme-dark: #2c3e50;
+    --theme-light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--theme-light-bg);
+    margin: 0;
+}
+
+.hero-section {
+    background-color: var(--theme-secondary);
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: var(--theme-dark);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #5a6872;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* CHANGE: New style for all main content sections to create a consistent, clean layout. */
+.section-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 1140px;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--theme-dark);
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--theme-primary);
+    display: inline-block;
+}
+
+/* CHANGE: New style for table headers to match the site's theme. */
+.table-theme {
+    background-color: var(--theme-secondary);
+    color: var(--theme-dark);
+}
+
+/* CHANGE: New style for cards for a subtle, themed look. */
+.card-theme {
+    border: 1px solid #dee2e6;
+    border-top: 4px solid var(--theme-primary);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-theme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--theme-dark);
+    background-color: var(--theme-secondary);
+}
+
+/* CHANGE: New styles for the "Back to Top" button. */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 1;
+    z-index: 1000;
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+#backToTopBtn:hover {
+    background-color: var(--theme-dark);
+    border-color: var(--theme-dark);
+}
+
+code {
+    color: #d63384;
+    background-color: #e9ecef;
+    padding: .2em .4em;
+    margin: 0 .2em;
+    border-radius: .25rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    .section-container {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+}
