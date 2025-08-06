@@ -1,98 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="A webpage to practice using bootstrap">
-   <title>Bootstrap Content</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <ul class="nav body-data">
-         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Ice Cream</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Sales Data</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">Pictures</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link">Stories & Text</a>
-         </li>
-            <li class="nav-item">
-            <a class="nav-link">Summary</a>
-         </li>
-      </ul>
-      <div class="p-3 mb-2 bg-info text-dark body-data">
-         <header class = "header">
+
+    <div class="top-bar"></div>
+
+    <nav class="main-nav">
+        <div class="container-fluid">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#introduction">Ice Cream</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sales-data">Sales Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#images">Pictures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stories">Stories & Text</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#summary">Summary</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
             <h1>World of Ice Cream</h1>
-            <p>Ice cream's popularity lies in its creamy texture, refreshing taste, and 
-               <br>
-               diverse flavours, making it a beloved dessert for all occasions,
-               <br>
-               fostering social connections and nostaligc memories
+            <p>
+                Ice cream's popularity lies in its creamy texture, refreshing taste, and diverse
+                flavours, making it a beloved dessert for all occasions, fostering social connections
+                and nostalgic memories.
             </p>
-         </header>
-      </div>
-      <div class = "introduction-container body-data">
-         <h2 class = "introduction-header">Introduction</h2>
-            <p>Ice cream is a classic frozen dessert, loved for its creamy texture and endless variety of flavors. Made from a simple base of cream and sugar, it has become a universally cherished treat for people of all ages.</p>
-            <p>Its greatest perk is its ability to provide instant happiness. As an affordable and accessible treat, it serves as a simple comfort, a small reward, or an easy way to brighten any day.</p>
-            <p>Ice cream also brings people together, acting as a catalyst for social connection. Sharing a scoop is a timeless tradition that helps friends and family create new memories and strengthen their bonds.</p>
-         <div class = "top-link-container">
-            <a href ="#" class = "top-link">Top</a>
-         </div>
-      </div>
-      <div class = "ice-cream-container body-data">
-         <h2 class = "ice-cream-header">
-            Ice Cream Sales Data
-         </h2>
-         <p>In this section of the page, we have a nice table with some data from the 2024 Ice Cream Sales in Australia. Here the table is styled with the bootstrap classes table table-striped table-hover; and the table-success applied to the table header thead. Note, the table also includes a caption and is constrained to 8 columns on wider screens and all 12 columns on small screens (i.e., col-md-9 col-12 mx-auto).</p>
-      <table class="table body-data">
-      <thead>
-         <tr>
-            <th scope="col"></th>
-            <th scope="col">NSW</th>
-            <th scope="col">VIC</th>
-            <th scope="col">QLD</th>
-            <th scope="col">WA</th>
-            <th scope="col">SA</th>
-            <th scope="col">TAS</th>
-            <th scope="col">ACT</th>
-            <th scope="col">NT</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <th scope="row">Ice Cream Sales ($M)</th>
-            <td>32.6</td>
-            <td>23.6</td>
-            <td>28.7</td>
-            <td>19.2</td>
-            <td>15.6</td>
-            <td>10.6</td>
-            <td>7.7</td>
-            <td>9.7</td>
-         </tr>
-         <tr>
-            <th scope="row">Profit($M)</th>
-            <td>3.6</td>
-            <td>2.6</td>
-            <td>8.7</td>
-            <td>9.2</td>
-            <td>1.6</td>
-            <td>0.6</td>
-            <td>1.7</td>
-            <td>0.7</td>
-         </tr>
-      </tbody>
-      </table>
-      <caption class = "table-caption">
-         Australian Ice Cream Sales by State (2024)
-      </caption>
+        </div>
+    </section>
+
+    <div class="container" id = "introduction">
+        <h2>Introduction</h2>
+        <p>
+            This is the simple page that shows a number of bootstrap components and the styles they provide to enhance plain HTML content - while also supporting a responsive display (screen resizing).
+        </p>
+        <p>
+            Firstly, at the top of the page, within a <code>&lt;header&gt;...&lt;/header&gt;</code> section, it is common to have the <strong>navigation</strong> and some form of <strong>banner / heading</strong> content. Here we have a list using the Bootstrap <code>&lt;nav&gt;...&lt;/nav&gt;</code> component in a container with five links to different parts of the webpage, with a blue hue (bg-info) background. While a second <code>container-fluid</code> with a light blue (bg-info-subtle) holds the <strong>banner</strong> details in a centred column of width 8 (<code>col-sm-8 mx-auto text-center py-4</code>) and comprising a title of the page and leading sentence.
+        </p>
+        <p>
+            Next is the <code>&lt;body&gt;...&lt;/body&gt;</code> section that holds the <strong>content</strong> of the page. The content includes the following sections: <strong>Introduction</strong> (this); <strong>Ice Cream Sales</strong>; <strong>Ice Cream Pictures</strong>; and a <strong>Summary</strong>. The table content is formatted, while the pictures and stories of ice creams applies differing responsive layouts.
+        </p>
+        <p>
+            The final section is a <code>&lt;footer&gt;...&lt;/footer&gt;</code>.
+        </p>
+        <p>
+            Note that each section has a <strong>hyperlink</strong> to the <strong>Top</strong> of the document for navigation.
+        </p>
+        <div class="text-end">
+            <a href="#">Top</a>
+        </div>
+    </div>
+
+    <div class="container" id = "sales-data">
+        <h2>Ice Cream Sales Data</h2>
+        
+        <p>
+            In this section of the page, we have a nice table with some data from the 2024 Ice Cream Sales in Australia. Here the table is styled with the bootstrap classes<code>table</code><code>table-striped-columns</code><code>table-hover</code>, and the<code>table-success</code>applied to the table header<code>thead</code>. Note, the table also includes a caption and is constrained to 8 columns on wider screens and all 12 columns on small screens (i.e.,<code>col-md-9 col-12 mx-auto</code>).
+        </p>
+
+        <div class="row mt-4">
+            <div class="col-12 col-lg-10 mx-auto">
+                
+                <table class="table table-striped-columns table-hover text-center shadow-sm rounded-3 overflow-hidden">
+                    
+                    <caption class="pb-2 pt-3">Australian Ice Cream Sales by State (2024)</caption>
+                    
+                    <thead class="table-success">
+                        <tr>
+                            <th scope="col" class="text-start"></th>
+                            <th scope="col">NSW</th>
+                            <th scope="col">VIC</th>
+                            <th scope="col">QLD</th>
+                            <th scope="col">WA</th>
+                            <th scope="col">SA</th>
+                            <th scope="col">TAS</th>
+                            <th scope="col">ACT</th>
+                            <th scope="col">NT</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Ice Cream Sales ($M)</th>
+                            <td>32.6</td>
+                            <td>23.6</td>
+                            <td>28.7</td>
+                            <td>19.2</td>
+                            <td>15.6</td>
+                            <td>10.6</td>
+                            <td>7.7</td>
+                            <td>9.7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Profit ($M)</th>
+                            <td>3.6</td>
+                            <td>2.6</td>
+                            <td>8.7</td>
+                            <td>9.2</td>
+                            <td>1.6</td>
+                            <td>0.6</td>
+                            <td>1.7</td>
+                            <td>0.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+         <div class="text-end">
+            <a href="#">Top</a>
+        </div>
+    </div>
+    <div class="container my-5" id = "images">
+        <div class="content-section">
+            <h2 class="mb-3">Ice Cream Pictures (Responsive Layout)</h2>
+            
+            <p class="text-muted">
+                Below are some pretty pictures of ice creams, beautiful and freely-usable images downloaded from the website <a href="#" class="text-decoration-none">Unsplash</a>. These images are placed in a single bootstrap <code>row g-1</code> (where the <code>g-1</code> adds a gutter size 1 between the images) composed of columns using a combined <code>col-sm-6 col-12</code>. The <code>col-sm-6</code> forces 2 images to be in a row on all screens sizes <strong>except</strong> very small ones (&lt;576px) where the <code>col-12</code> forces the images to use all 12 column grid units and stack each image on top of each other. Each image has the class <code>img-fluid</code> applied to it, allowing it to resize to the size of the column.
+            </p>
+
+            <div class="row g-1 mt-4">
+                <div class="col-12 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1974&auto=format&fit=crop" 
+                         class="img-fluid" 
+                         alt="A lot of tubs of ice cream.">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=1974&auto=format&fit=crop" 
+                         class="img-fluid" 
+                         alt="A lot of tubs of ice cream.">
+                </div>
+                <div class="col-12 col-sm-6">
+                     <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=2072&auto=format&fit=crop" 
+                          class="img-fluid" 
+                          alt="A panda chewing on bamboo.">
+                </div>
+                <div class="col-12 col-sm-6">
+                     <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=2072&auto=format&fit=crop" 
+                          class="img-fluid" 
+                          alt="A panda chewing on bamboo.">
+                </div>
+            </div>
+        </div>
+               <div class="text-end">
+            <a href="#">Top</a>
+        </div>
+    </div>
+
+    <div class="container" id = "stories">
+        <h2 class="mb-4">Ice Cream Stories</h2>
+
+
+        <p>The following three images and text are each held within <code>div</code> block that the class attributes <code>p-4 mb-4 bg-light rounded</code>, to set the padding, margin-below, background colour and corner shape, respectively. Each Image & Text holds a <code>row</code>, with the image is assigned to a <code>col-sm-4</code> column and the text assigned to a single <code>col-sm-8</code>; allowing it to span the remaining 8 column units. Added to each of these two columns is the <code>col-12</code>, which says when the screen is smaller than 576px, it will then use all 12 columns grids for each image and text, allowing them to be stacked on top of each other.</p>
+
+
+        <div class="p-4 mb-4 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+
+                    <img src="image5.jpg" 
+                         class="img-fluid rounded" 
+                         alt="Hand holding an ice cream cone at the beach.">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <p class="lead mb-1">Ice Creams at the Beach by Tim Stief</p>
+                    <p class="small mb-0">Here, the class <code>img-fluid rounded</code> has been applied to the image. The title above uses <code>&lt;p class="lead"&gt;</code> to make the text standout. While this text uses the <code>&lt;p class="small"&gt;</code> to distinguish it from the normal paragraphs.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-4 mb-4 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+
+                    <img src="image6.jpg" 
+                         class="img-fluid rounded-pill" 
+                         alt="Ice cream cone in a carpark.">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <p class="lead mb-1">Ice Creams in a Carpark by Valerian Koo</p>
+                    <p class="mb-0">Another picture of a beautiful butterfly that has the class <code>img-fluid rounded-pill</code> applied to it.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-4 mb-4 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+
+                    <img src="image7.jpg" 
+                         class="img-fluid rounded-circle" 
+                         alt="Ice cream cone in a snowy setting.">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <p class="lead mb-1">Ice Creams in Winter by Phillip Cordts</p>
+                    <p class="mb-0">Here, the class <code>img-fluid rounded-circle</code> has been applied to the image.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-end">
+            <a href="#">Top</a>
+        </div>
+
+    </div>
+    <div class="container" id="summary">
+        <h2 class="mb-3">Summary</h2>
+        <p>This then concludes the content in the <strong>main</strong> section of the page. Note that the end of each content block is a hyperlink back to the <strong>Top</strong> of the page. It uses the <code>&lt;p class="text-end"&gt;</code> to align to the right of the screen.</p>
+        <p>The next and final section is the footer which uses div styled with the class <code>container-fluid p-2 bg-dark text-white</code> to align the paragraph text in centre of the container.</p>
+        <div class="text-end">
+            <a href="#">Top</a>
+        </div>
+    </div>
+
+    <footer class="container-fluid p-2 bg-dark text-white text-center">
+        <p class="mb-0">&copy; 2024 A webpage footer with important info.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
