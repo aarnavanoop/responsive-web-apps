@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7.3C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>FORM VALIDATION</h1>
+        <h2>Online Form Validation</h2>
+        <p>Please enter your contact details into the form below to register your interest in receiving support with a given unit. Please make sure you use the correct format when inputting your data.</p>
+
+        <form id="contactForm" onsubmit="return validateForm(event)">
+            <div class="form-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+                <span id="name-msg" class="message"></span>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <span id="email-msg" class="message"></span>
+            </div>
+            <div class="form-field">
+                <label for="unit">Deakin Unit:</label>
+                <input type="text" id="unit" placeholder="Unit Code">
+                <span id="unit-msg" class="message"></span>
+            </div>
+            <div class="form-field">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Phone Number">
+                <span id="phone-msg" class="message"></span>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit Query</button>
+                <button type="reset" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
