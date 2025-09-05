@@ -1,0 +1,53 @@
+:root {
+    --bs-primary-rgb: 79, 70, 229;
+    --bs-body-font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.hero-section {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutor-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.invalid-feedback {
+    display: block;
+}
