@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+address p {
+    margin-bottom: 0.5rem;
+}
+
+.section img {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section img {
+        margin-top: 0;
+    }
+}
